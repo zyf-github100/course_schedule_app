@@ -74,10 +74,20 @@ course_schedule_app/
 - [x] 创建 GitHub 公开仓库
 - [x] 添加 README 文档
 - [x] 添加 Apache-2.0 License
+- [x] 完成首页 MVP 静态页面
 - [ ] 补充项目源码
 - [ ] 明确技术栈
 - [ ] 添加运行说明
 - [ ] 添加界面截图或预览
+
+## 当前已完成
+
+当前仓库已经包含一个首页 MVP：
+- `index.html`：首页结构
+- `styles.css`：页面样式
+- `app.js`：示例课程数据渲染
+
+直接用浏览器打开 `index.html` 就能预览首页。
 
 ## 截图 / 预览
 

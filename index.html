@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>course_schedule_app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-badge">课</div>
+          <div>
+            <h1>course_schedule_app</h1>
+            <p>你的课程安排，一眼看清</p>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a class="active" href="#">首页</a>
+          <a href="#schedule">本周课程</a>
+          <a href="#today">今日安排</a>
+          <a href="#todo">待办提醒</a>
+        </nav>
+
+        <section class="card mini-card">
+          <span class="label">当前周次</span>
+          <strong>第 5 周</strong>
+          <small>春季学期 · 示例数据</small>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <header class="hero">
+          <div>
+            <p class="eyebrow">首页概览</p>
+            <h2>今天有 4 节课，1 个待办，记得下午实验课不要迟到。</h2>
+            <p class="hero-text">
+              这是首页 MVP 版本，先把课程表应用的主界面搭起来，后面可以继续接上新增课程、提醒、登录、同步等功能。
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button>添加课程</button>
+            <button class="secondary">导入课表</button>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="card stat-card">
+            <span>今日课程</span>
+            <strong>4</strong>
+            <small>上午 2 节 · 下午 2 节</small>
+          </article>
+          <article class="card stat-card">
+            <span>空闲时间</span>
+            <strong>2h 30m</strong>
+            <small>可安排自习或休息</small>
+          </article>
+          <article class="card stat-card">
+            <span>待办事项</span>
+            <strong>1</strong>
+            <small>高数作业今晚 20:00 前提交</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <section class="card schedule-card" id="today">
+            <div class="section-title">
+              <h3>今日课程</h3>
+              <span>Wednesday</span>
+            </div>
+            <div class="class-list" id="class-list"></div>
+          </section>
+
+          <section class="card todo-card" id="todo">
+            <div class="section-title">
+              <h3>提醒事项</h3>
+              <span>本日重点</span>
+            </div>
+            <ul>
+              <li>08:00 前到 2 号教学楼 301 教室</li>
+              <li>14:00 实验课带上实验报告</li>
+              <li>20:00 前提交高等数学作业</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="card weekly-card" id="schedule">
+          <div class="section-title">
+            <h3>本周课程预览</h3>
+            <span>Mon - Fri</span>
+          </div>
+          <div class="week-grid">
+            <div><strong>周一</strong><span>3 节课</span></div>
+            <div><strong>周二</strong><span>4 节课</span></div>
+            <div class="highlight"><strong>周三</strong><span>4 节课</span></div>
+            <div><strong>周四</strong><span>2 节课</span></div>
+            <div><strong>周五</strong><span>3 节课</span></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
