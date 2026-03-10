@@ -75,10 +75,20 @@ course_schedule_app/
 - [x] 添加 README 文档
 - [x] 添加 Apache-2.0 License
 - [x] 完成首页 MVP 静态页面
+- [x] 完成课程表页静态页面
 - [ ] 补充项目源码
 - [ ] 明确技术栈
 - [ ] 添加运行说明
 - [ ] 添加界面截图或预览
+
+## 页面预览
+
+当前已完成页面：
+- `index.html`：首页
+- `schedule.html`：课程表页
+- `styles.css`：通用样式
+- `app.js`：首页示例数据
+- `schedule.js`：课程表页示例数据
 
 ## 当前已完成
 

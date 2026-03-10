@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>课程表页 · course_schedule_app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-badge">课</div>
+          <div>
+            <h1>course_schedule_app</h1>
+            <p>你的课程安排，一眼看清</p>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a href="index.html">首页</a>
+          <a class="active" href="schedule.html">课程表页</a>
+          <a href="#week-summary">本周概览</a>
+          <a href="#tips">使用提示</a>
+        </nav>
+
+        <section class="card mini-card">
+          <span class="label">学期信息</span>
+          <strong>2026 春季</strong>
+          <small>第 5 周 · 示例课表</small>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <header class="hero schedule-hero">
+          <div>
+            <p class="eyebrow">课程表页</p>
+            <h2>周课表总览，按天查看课程安排。</h2>
+            <p class="hero-text">
+              这是课程表页的第一版，先把周视图、每日课程和课程块样式搭起来，后面可以继续接编辑、筛选、同步和提醒功能。
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button onclick="location.href='index.html'">返回首页</button>
+            <button class="secondary">切换周次</button>
+          </div>
+        </header>
+
+        <section class="card" id="week-summary">
+          <div class="section-title">
+            <h3>本周概览</h3>
+            <span>周一到周日</span>
+          </div>
+          <div class="week-summary-grid" id="week-summary-grid"></div>
+        </section>
+
+        <section class="card schedule-board-card">
+          <div class="section-title">
+            <h3>课程表</h3>
+            <span>按天展示</span>
+          </div>
+          <div class="schedule-board" id="schedule-board"></div>
+        </section>
+
+        <section class="card" id="tips">
+          <div class="section-title">
+            <h3>后续可加</h3>
+            <span>下一步功能</span>
+          </div>
+          <ul class="tips-list">
+            <li>支持新增 / 编辑 / 删除课程</li>
+            <li>支持按周切换、按日期筛选</li>
+            <li>支持本地存储与云端同步</li>
+            <li>支持考试周、空教室、自定义颜色标签</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="schedule.js"></script>
+  </body>
+</html>
